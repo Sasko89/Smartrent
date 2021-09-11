@@ -101,7 +101,7 @@ export const distanceCostState = selector<number>({
     const returnMilage = get(returnMilageState);
 
     if (payment) {
-      const baseFee: number = 29;
+      const baseFee: number = 9;
       const distanceDiff: number = returnMilage - payment.currentMilage;
 
       switch (payment.rentType) {

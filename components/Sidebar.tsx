@@ -13,17 +13,17 @@ const Step = ({ title, pic, activePic }) => {
     <>
       {activeStep == title ? (
         <div className="flex items-center justify-center w-full h-16 rounded-t-md md:ml-10 md:rounded-l-full bg-sand md:justify-start">
-          <div className="flex items-center justify-center object-cover h-full p-3 transition md:my-auto w-14 md:mr-1 ">
+          <div className="flex items-center justify-center object-cover w-0 h-full transition md:p-3 md:my-auto md:w-14 md:mr-1 ">
             <Image src={activePic} alt={title} className="" />
           </div>
           <p className="font-bold text-md text-warmBlack ">{title}</p>
         </div>
       ) : (
         <div className="flex items-center justify-center w-full h-16 md:ml-10 md:rounded-l-full md:justify-start ">
-          <div className="flex items-center justify-center invisible object-cover h-full p-3 transition md:my-auto w-14 md:visible ">
+          <div className="flex items-center justify-center invisible object-cover w-0 h-full transition md:p-3 md:my-auto md:w-14 md:visible ">
             <Image src={pic} alt="fordon" className="text-white" />
           </div>
-          <p className="text-white text-md font-regular ">{title}</p>
+          <p className="font-light text-white text-md ">{title}</p>
         </div>
       )}
     </>

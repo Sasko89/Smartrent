@@ -42,7 +42,9 @@ function rental() {
       {activeStep === 'Uppgifter' && <Form />}
       {activeStep === 'Uthyrd' && (
         <div className="flex justify-center mt-40 md:col-span-8 lg:col-span-9">
-          <h1 className="text-5xl font-regular">Bokningen är slutförd</h1>
+          <h1 className="text-5xl text-center font-regular">
+            Bokningen är slutförd
+          </h1>
         </div>
       )}
     </div>
